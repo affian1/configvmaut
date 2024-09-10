@@ -65,7 +65,7 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
       apt-get update
-      apt-get install -y nginx
-      systemctl enable nginx
+      apt-get install -y apache2
+      systemctl enable apache2
   SHELL
 end
